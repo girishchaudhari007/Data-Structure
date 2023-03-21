@@ -1,0 +1,23 @@
+//recursion of addtion of privous of two number
+
+#include<iostream.h>
+#include<conio.h>
+
+int sum(int num)
+{
+	if(num != 0)
+	{
+		return num+sum(num-1);
+	}
+	return 0;
+}
+int main()
+{
+	int num;
+	clrscr();
+	cout<<"enter the number:";
+	cin>>num;
+	cout<<"sum is:"<<sum(num);
+	return 0;
+	getch();
+}
