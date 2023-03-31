@@ -1,0 +1,48 @@
+// write a c++ program for Multiplication of matrix
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+int a[2][2],b[2][2],c[2][2],k;
+int i,j;
+clrscr();
+cout<<"Enter first matrix:-";
+for(i=0;i<2;i++){
+for(j=0;j<2;j++){
+cin>>a[i][j];
+}
+}
+cout<<"Enter second matrix:-";
+for(i=0;i<2;i++){
+for(j=0;j<2;j++){
+cin>>b[i][j];
+}
+}
+cout<<"Element of first matrix:-\n";
+for(i=0;i<2;i++){
+for(j=0;j<2;j++){
+cout<<a[i][j]<<"\n";
+}
+}
+cout<<"Element of second matrix:-\n";
+for(i=0;i<2;i++){
+for(j=0;j<2;j++){
+cout<<b[i][j];
+}
+}
+cout<<"\nMultiplication of matrix is:-";
+for(i=0;i<2;i++){
+for(j=0;j<2;j++){
+c[i][j]=0;
+for(k=0;k<2;k++){
+c[i][j]+=a[i][j]*b[i][j];
+}
+}
+}
+for(i=0;i<2;i++){
+for(j=0;j<2;j++){
+cout<<c[i][j];
+}
+}
+getch();
+}
