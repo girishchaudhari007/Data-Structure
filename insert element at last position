@@ -1,0 +1,21 @@
+//write a program to insert element at last position.
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+int arr=[20],i,n;
+clrscr();
+cout<<"Enter array element:-";
+for(i=0;i<5;i++)
+{
+cout<<arr[i];
+}
+cout<<"\nEnter number to insert:-";
+cin>>n;
+for(i=0;i<5;i++)
+{
+cout<<arr[i]<<" ";
+}
+cout<<endl;
+getch();
+}
