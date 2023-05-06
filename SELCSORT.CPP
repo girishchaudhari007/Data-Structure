@@ -20,11 +20,11 @@ void main()
 	 cout<<arr[i]<<"\n";
 	}
 
-	for(i=1;i<size;i++)
+	for(i=0;i<size;i++)
 	{
-	 for(j=0;j<size;j++)
+	 for(j=i+1;j<size;j++)
 	 {
-	  if(arr[j]>arr[i])
+	  if(arr[i]>arr[j])
 	  {
 	   temp=arr[i];
 	   arr[i]=arr[j];
